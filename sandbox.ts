@@ -1,11 +1,16 @@
-const character = 'luigi';
+//you cannot change the types the variable, you can change the values but not types
+let character = 'mario';
+let age = 30;
+let isBlackBelt = false;
 
-console.log(character);
+character = 'luigi';
 
-const inputs = document.querySelectorAll('input');
+age = 40;
 
-console.log(inputs);
+isBlackBelt = true;
 
-inputs.forEach(input => {
-  console.log(input);
-})
+const circ = (diameter: number) => {
+  return diameter * Math.PI;
+}
+
+console.log(circ(7.5));
