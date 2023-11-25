@@ -19,23 +19,39 @@ names.push('toad');
 // numbers.push(25);
 // numbers.push('shaun');
 // numbers[1] = 'shaun'
-var mixed = ['ken', 4, 'jenny', 8, 9];
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
-//Objects 
-var ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
-};
-ninja.age = 40;
-ninja.name = 'ryu';
-// ninja.age = '30'
-// ninja.skills = ['fighting', 'sneaking']
-ninja = {
-    name: 'luigi',
-    belt: 'orange',
-    age: 40,
-    skills: []
-};
+// let mixed = ['ken', 4, 'jenny', 8, 9];
+// mixed.push('ryu');
+// mixed.push(10);
+// mixed[0] = 3;
+// //Objects 
+// let ninja = {
+//   name: 'mario',
+//   belt: 'black',
+//   age: 30
+// };
+// ninja.age = 40;
+// ninja.name = 'ryu'
+// // ninja.age = '30'
+// // ninja.skills = ['fighting', 'sneaking']
+// ninja = {
+//   name: 'luigi',
+//   belt: 'orange',
+//   age: 40,
+//   skills: []
+// }
+//EXPLICIT TYPES
+//explicit types
+var character;
+var age;
+var isLoggedIn;
+age = 22;
+isLoggedIn = true;
+//arrays
+var ninjas = [];
+ninjas.push('shaun');
+//union types
+var mixed = [];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+//objects

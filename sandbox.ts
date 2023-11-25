@@ -31,27 +31,63 @@ names.push('toad');
 // numbers.push('shaun');
 // numbers[1] = 'shaun'
 
-let mixed = ['ken', 4, 'jenny', 8, 9];
+// let mixed = ['ken', 4, 'jenny', 8, 9];
 
-mixed.push('ryu');
-mixed.push(10);
-mixed[0] = 3;
+// mixed.push('ryu');
+// mixed.push(10);
+// mixed[0] = 3;
 
-//Objects 
-let ninja = {
-  name: 'mario',
-  belt: 'black',
-  age: 30
-};
+// //Objects 
+// let ninja = {
+//   name: 'mario',
+//   belt: 'black',
+//   age: 30
+// };
 
-ninja.age = 40;
-ninja.name = 'ryu'
-// ninja.age = '30'
-// ninja.skills = ['fighting', 'sneaking']
+// ninja.age = 40;
+// ninja.name = 'ryu'
+// // ninja.age = '30'
+// // ninja.skills = ['fighting', 'sneaking']
 
-ninja = {
-  name: 'luigi',
-  belt: 'orange',
-  age: 40,
-  skills: []
+// ninja = {
+//   name: 'luigi',
+//   belt: 'orange',
+//   age: 40,
+//   skills: []
+// }
+
+//EXPLICIT TYPES
+
+//explicit types
+let character: string;
+let age: number;
+let isLoggedIn: boolean;
+
+age = 22;
+isLoggedIn = true;
+
+//arrays
+let ninjas: string[] = [];
+ninjas.push('shaun');
+
+//union types
+let mixed: (string|number| boolean)[] =[];
+mixed.push('hello');
+mixed.push(20);
+mixed.push(false);
+
+let uid: string|number;
+uid = '123';
+uid = 123;
+
+//objects
+let ninjaOne: object;
+ninjaOne ={ name: 'yoshi', age = 30}
+
+let ninjaTwo: {
+  name: string,
+  age: number,
+  beltColor: string
 }
+
+ninjaTwo = {name: 'luigi', age: 20, beltColor: 'black'}
