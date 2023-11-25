@@ -58,36 +58,50 @@ names.push('toad');
 
 //EXPLICIT TYPES
 
-//explicit types
-let character: string;
-let age: number;
-let isLoggedIn: boolean;
+// //explicit types
+// let character: string;
+// let age: number;
+// let isLoggedIn: boolean;
 
-age = 22;
-isLoggedIn = true;
+// age = 22;
+// isLoggedIn = true;
 
-//arrays
-let ninjas: string[] = [];
-ninjas.push('shaun');
+// //arrays
+// let ninjas: string[] = [];
+// ninjas.push('shaun');
 
-//union types
-let mixed: (string|number| boolean)[] =[];
+// //union types
+// let mixed: (string|number| boolean)[] =[];
+// mixed.push('hello');
+// mixed.push(20);
+// mixed.push(false);
+
+// let uid: string|number;
+// uid = '123';
+// uid = 123;
+
+// //objects
+// let ninjaOne: object;
+// ninjaOne ={ name: 'yoshi', age = 30}
+
+// let ninjaTwo: {
+//   name: string,
+//   age: number,
+//   beltColor: string
+// }
+
+// ninjaTwo = {name: 'luigi', age: 20, beltColor: 'black'}
+
+//DYNAMIC TYPES (try not to use so much defeats the purpose of typescript)
+
+let age: any = 25;
+age = true;
+
+let mixed: any[] =[];
 mixed.push('hello');
-mixed.push(20);
+mixed.push(22);
 mixed.push(false);
 
-let uid: string|number;
-uid = '123';
-uid = 123;
-
-//objects
-let ninjaOne: object;
-ninjaOne ={ name: 'yoshi', age = 30}
-
-let ninjaTwo: {
-  name: string,
-  age: number,
-  beltColor: string
-}
-
-ninjaTwo = {name: 'luigi', age: 20, beltColor: 'black'}
+let ninja: {name: any, age: any}
+ninja = {name: 'yoshi', age: 25};
+ninja = {name: 25, age: 'yoshi'};
