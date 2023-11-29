@@ -10,7 +10,7 @@
 //   return diameter * Math.PI;
 // }
 // console.log(circ(7.5));
-let names = ['luigi', 'mario', 'peach'];
+var names = ['luigi', 'mario', 'peach'];
 names.push('toad');
 //Arrays
 //cannot do this because the names array was initialized to strings
@@ -77,4 +77,19 @@ names.push('toad');
 // let ninja: {name: any, age: any}
 // ninja = {name: 'yoshi', age: 25};
 // ninja = {name: 25, age: 'yoshi'};
-console.log('test');
+// console.log('test');
+var greet;
+greet = function () {
+    console.log('hello, again');
+};
+//tip: always do required parameters first, then the optional at the end
+var add = function (a, b, c) {
+    if (c === void 0) { c = 10; }
+    console.log(a + b);
+    console.log(c);
+};
+add(5, 10, '20');
+var minus = function (a, b) {
+    return a + b;
+};
+var result = minus(10, 7);
