@@ -108,22 +108,33 @@ names.push('toad');
 
 
 // console.log('test');
-let greet: Function;
+// let greet: Function;
 
-greet = () => {
-  console.log('hello, again');
+// greet = () => {
+//   console.log('hello, again');
+// }
+
+// //tip: always do required parameters first, then the optional at the end
+// const add = (a: number, b: number, c: number | string = 10): void => {
+//   console.log(a + b);
+//   console.log(c);
+// }
+
+// add(5, 10, '20');
+
+// const minus = (a: number, b: number) => {
+//   return a +b;
+// }
+
+// let result = minus(10, 7);
+type StringOrNum = string | number;
+type objWithName = {name: string, uid: StringOrNum}
+
+const logDetails = (uid: StringOrNum, item: string) => {
+  console.log(`${item} has a uid of ${uid}`);
 }
 
-//tip: always do required parameters first, then the optional at the end
-const add = (a: number, b: number, c: number | string = 10): void => {
-  console.log(a + b);
-  console.log(c);
+const greet = (user: objWithName) => {
+  console.log(`${user.name} says hello`);
 }
 
-add(5, 10, '20');
-
-const minus = (a: number, b: number) => {
-  return a +b;
-}
-
-let result = minus(10, 7);
