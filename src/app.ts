@@ -53,21 +53,23 @@ let docOne = addUID ({name: 'yoshi', age: 40});
 
 console.log(docOne.age);
 
+enum ResourceType { BOOK, AUTHOR, FILM, DIRECTOR, PERSON }
+
 interface Resource<T> {
   uid: number;
-  resourceName: string;
+  resourceType: ResourceType;
   data: T;
 }
 
 const docThree: Resource<string> = {
   uid: 1,
-  resourceName: 'person',
+  resourceType: ResourceType.BOOK,
   data: 'shaun'
 }
 
 const docFour: Resource<string[]> = {
   uid: 2,
-  resourceName: 'shoppingList',
+  resourceType: ResourceType.PERSON,
   data: ['bread', 'milk', 'toilet roll']
 }
 
